@@ -1,6 +1,12 @@
 import chapter1.Base;
 import chapter1.OneMoreThan;
 import chapter1.Zero;
+import chapter2.kebab.Holder;
+import chapter2.kebab.Radish;
+import chapter2.kebab.Shallot;
+import chapter2.kebab.plate.Gold;
+import chapter2.kebab.rod.Dagger;
+import chapter2.shish.*;
 
 public class Main {
 
@@ -29,7 +35,16 @@ public class Main {
     }
 
     public void chapter2() {
+        // Decorator pattern ?
+        // lamb + tomato + onion + skewer(shish)
+        DShish shish = new Lamb(new Tomato(new Onion(new Skewer())));
+        shish.isVegetarian();
+        shish.onlyOnions();
 
+        // What is the following ?
+        new Shallot(new Radish(new Holder(new Dagger()))); // It is a Kebab;
+        // What is the holder ?
+        new Shallot(new Radish(new Holder(new Gold())));
     }
 
     public static void main(String[] args) {

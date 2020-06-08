@@ -1,4 +1,4 @@
-package chapter2;
+package chapter2.point;
 
 public class ManhattanPoint extends DPoint {
     private int x;
