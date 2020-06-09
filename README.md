@@ -1,1 +1,1 @@
-Sample codes of `A Little Java, A Few Patterns`
+Sample codes of `A Little Java, A Few Patterns`.
